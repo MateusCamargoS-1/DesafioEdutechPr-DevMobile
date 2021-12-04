@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="./img/edutech-img.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="corpo">
+        <main class="conteudo">
+            <div class="container">
+                <div class="logo">
+                    <h1><span>Edu</span>tech</h1>
+                    <p>Programa</p>
+                </div>
+                <div class="cadastro">
+                    <form action="post">
+                        <div class="nome">
+                            <input type="text" name="nome" id="Nome" placeholder="Nome">
+                            <input type="text" name="sobrenome" id="Sobrenome" placeholder="Sobrenome">
+                        </div>
+                        <input type="text" name="email" id="Email" placeholder="Email">
+                        <input type="password" name="senha" id="Senha" placeholder="Senha">
+                        <input type="password" name="senha" id="Senha" placeholder="Confirmar Senha">
+                    </form>
+                    <button onClick="javascript:window.location.href='../index.html'" class="btn btn-criarConta">Criar Conta</button>
+                    <hr>
+                    <button onClick="javascript:window.location.href='../login/login.html'" class="btn btn-entrar">Entrar</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="copy">©2021 programa edutech.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

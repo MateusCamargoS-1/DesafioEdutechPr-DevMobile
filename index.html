@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Edutech</title>
+    <link rel="icon" href="./img/edutech-img.png" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="./menu/menu.css">
+    <link rel="stylesheet" href="trilhas.css">
+    <link rel="stylesheet" href="contatos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="nav">
+            <div class="logo">
+                <h1><a href="#inicio"><span>Edu</span>tech</a></h1>
+                <p>programa</p>
+            </div>
+            <nav class="menu-navegacao">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="./trilhas/trilhas.html">Trilhas</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Contato">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <aside class="cadastro">
+            <ul>
+                <li><a href="./login/login.html" target="_blank">Login</a></li>
+                <li><a href="./cadastrar/cadastro.html" target="_blank" class="cadastrar">cadastrar</a></li>
+            </ul>
+        </aside>
+        <div class="wrap-menu">
+            <div class="menu-mobile open-menu close">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="menu-mobile close-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <ul class="lista-nav close">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./trilhas/trilhas.html">Trilhas</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Contato">Contatos</a></li>
+                <li class="login-cadastro">
+                    <a href="./login/login.html" class="entra">Login</a>
+                    <a href="./cadastrar/cadastro.html" class="cadastrar-mobile">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="conteudo">
+        <div id="Sobre" class="container">
+            <h1 class="titulo-principal">Programa Edutech</h1>
+
+            <a href="http://alura.com.br"><img class="img-edu" src="img/edutech-img.png" alt="imagem-edutech"></a>
+            <h3>"Edutech um dos maiores programas de educação de tecnologia no país."</h3>
+        </div>
+        <div class="caixa-trilha">
+            <h2 class="titulo-trilha">Cursos gratuitos de Programação, Games e Animação.</h2>
+            <div class="conhecer">
+                <h2 class="titulo-trilha">Trilhas De Estudos</h2>
+                <a href="./trilhas/trilhas.html" target="_blank" class="btn-conhecer">Conhecer</a>
+            </div>
+        </div>
+        <div id="Contato" class="contatos">
+            <h1>Contato</h1>
+            <div class="form">
+                <form class="contato" action="post">
+                    <input class="controle-form" type="text" name="name" id="Name" placeholder="Nome">
+                    <input class="controle-form" type="text" name="email" id="Email" placeholder="Email">
+                    <textarea class="controle-form" name="mensagem" id="Mensagem" cols="55" rows="10"
+                        placeholder="Mensagem"></textarea>
+                </form>
+                <button class="btn-enviar">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="caixa">
+                <div class="logo logo-rodape">
+                    <h1><span>Edu</span>tech</h1>
+                    <p>programa</p>
+                </div>
+                <nav class="mapa-site">
+                    <ul>
+                        <li><a href="#Inicio">Inicio</a></li>
+                        <li><a href="./trilhas/trilhas.html">Trilha</a></li>
+                        <li><a href="#Sobre">Sobre</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img class="parana" src="img/simbolo-parana.png" alt="simbolo-parana">
+            <div class="imgs">
+                <a href="https://alura.com.br"><img src="img/logo-alura.jpg" alt="logo-alura"></a>
+                <a href="https://facebook.com"><img src="img/icon-facebook.ico" alt="logo-alura"></a>
+                <a href="https://instagram.com"><img src="img/icon-instagram.svg" alt="logo-alura"></a>
+            </div>
+        </div>
+        <div class="copy">
+            <p class="copy">©2021 programa edutech.</p>
+        </div>
+    </footer>
+    <script src="./menu/btnMenu.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/* display flex para alinhar os alementos, deixando os elementos em colunas
+com flex-direction column, alinhando os items no centro,adicionando 
+uma largura de 850px e um margin auto pra ter um respiro nas laterais e ir acompanhando os diminuir da tela, é isso? kaka */
+.trilhas {
+    padding: 100px 0;
+    background-color: rgba(4, 0, 44, 0.522)
+}
+
+.trilhas .titulo-trilha {
+    font-size: 2em;   
+    filter: drop-shadow(0 0 5px #fff);
+    margin: 0 50px;
+}
+
+.trilhas .estudos {
+    margin-bottom: 30px;
+}
+
+.trilhas .lista-trilhas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 850px;
+    margin: auto;
+}
+
+/* facil entendimento, n tem muito oq falar, apenas adicionei uma cor de fundo
+transparente, e arredondei as bordas, é isso ai */
+.lista-trilhas .item-lista {
+    width: 95%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid #fff;
+    padding: 30px 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* adicionando um hover para quando o mouse passar o item ou elemnto tenha uma açao 
+usei o cursor pointer pra dar a ilusao de clicar ou clicar mesmo kakak e um transition para
+determinar a velocidade de açao*/
+.lista-trilhas .item-lista:hover {
+    cursor: pointer;
+    background-color: rgba(3, 10, 111);
+    transition: 500ms;
+}
+
+.lista-trilhas .item-lista li {
+    margin: 30px 0;
+}
+
+.lista-trilhas .item-lista h1 {
+    font-size: 1.5em;
+}
+
+.lista-trilhas .item-lista .span-p {
+    font-size: 16px;
+}
+
+.lista-trilhas .item-lista h3 {
+    font-size: 1.5em;
+}
+
+.pasta {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;           /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+
+/* mediaquery para se adequar as telas de celular e tablet */
+@media screen and (max-width: 425px) {
+    .trilhas .lista-trilhas {
+        width: 100%;
+    }
+    .lista-trilhas .item-lista {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trilhas .lista-trilhas {
+        width: 100%;
+    }
+
+    .lista-trilhas .item-lista {
+        width: 80%;
+    }
+}

@@ -1,0 +1,96 @@
+@media screen and (max-width: 425px) {
+    .wrap-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        padding: 0;
+    }
+
+    .menu-mobile {
+        padding: 20px 10px;
+    }
+
+    .lista-nav {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .lista-nav li {
+        text-transform: uppercase;
+        padding: 20px;
+        font-size: 1.7em;
+        border-bottom: 1px solid rgb(157, 157, 157);
+    }
+
+    .login-cadastro {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .login-cadastro .cadastrar-mobile {
+        color: #04ba5f;
+        background-color: rgb(228, 228, 228);
+        padding: 10px 5px;
+        border-radius: 15px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrap-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        padding: 0;
+    }
+
+    .menu-mobile {
+        align-self: flex-end;
+        padding: 20px 10px;
+    }
+
+    .lista-nav {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-cadastro {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .login-cadastro .cadastrar-mobile {
+        color: #04ba5f;
+        background-color: rgb(228, 228, 228);
+        padding: 10px 5px;
+        border-radius: 15px;
+        margin-left: 10px;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .lista-nav li {
+        text-transform: uppercase;
+        padding: 20px;
+        font-size: 1.2em;
+        border-bottom: 1px solid rgb(157, 157, 157);
+    }
+}

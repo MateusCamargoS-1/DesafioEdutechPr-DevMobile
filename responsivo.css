@@ -1,0 +1,161 @@
+/* mediaquery para se adequar as telas de celulares e tablet 
+decide colocar em outro arquivo pq talvez ia ficar muito grande la */
+@media screen and (max-width: 425px){
+    .menu-mobile .line {
+        display: flex;
+        background-color: #fff;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        width: 25px;
+        margin: 5px;
+    }
+
+    .conteudo .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        width: 100%;
+    }
+
+    .conteudo .container h1 {
+        font-size: 2.2em;
+    }
+
+    .conteudo .container h3 {
+        font-size: 1em;
+    }
+
+    .conteudo .container p {
+        font-size: 1.5em;
+        margin: 20px 10px 0 10px;
+    }
+
+    .conteudo .container img {
+        margin-bottom: 20px;
+    }
+
+    .caixa-trilha {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .caixa-trilha .titulo-trilha {
+        font-size: 2em;   
+        filter: drop-shadow(0 0 5px #fff);
+        margin: 0 10px 50px 10px;
+    }
+    
+    .caixa-trilha .conhecer {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 10px rgb(46, 46, 46);
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 50px 40px;
+    }
+    
+    .caixa-trilha .btn-conhecer {
+        font-size: 1.2em;
+        text-decoration: none;
+        padding: 20px 30px;
+        margin-top: 20px;
+        border: 0;
+        border-radius: 20px;
+        color: #fff;
+        background-color: rgb(0, 13, 89);
+    }
+    /* rodape */
+
+    .rodape {
+        flex-direction: column;
+    }
+
+    .logo-rodape {
+        padding: 40px 0 10px 0;
+    }
+
+    .mapa-site {
+        display: none;
+    }
+
+    .imgs {
+        margin: 30px 0 0 0;
+    }
+
+    .imgs img {
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-navegacao, .cadastro{
+        display: none;
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 20px 15px;
+    }
+
+    .menu-mobile .line {
+        display: flex;
+        background-color: #fff;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        width: 25px;
+        margin: 5px;
+    }
+
+    .conteudo .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .conteudo .container h1 {
+        font-size: 2em;
+    }
+
+    .conteudo .container h3 {
+        font-size: 2em;
+        margin: 0 10px 0 10px;
+    }
+
+    .conteudo .container p {
+        font-size: 1.5em;
+    }
+
+    .conteudo .container img {
+        margin-bottom: 20px;
+    }
+
+    /* rodape */
+    .rodape {
+        padding: 0 20px 20px 20px;
+    }
+
+    .logo-rodape {
+        padding: 40px 0 10px 0;
+    }
+
+    .mapa-site {
+        display: none;
+    }
+
+    .imgs {
+        margin: 30px 0 0 0;
+    }
+
+    .imgs img {
+        margin: 0 10px 0 10px;
+    }
+}

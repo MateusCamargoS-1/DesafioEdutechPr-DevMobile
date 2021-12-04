@@ -1,0 +1,264 @@
+/* adicionando uma cor de fundo gradiente */
+body {
+    background: linear-gradient(30deg, rgba(2,0,36,1) 21%, rgba(4,3,64,1) 50%, rgba(6,5,82,1) 69%, rgba(9,9,121,1) 86%, rgba(8,24,131,1) 100%, rgba(5,95,178,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+
+/* alinhando todos os item com flexbox, adicionando um espaço entre eles
+aplicando um espaçamento interno para que eles nao fiquem colados no canto da pagina
+alterando o estilda fonte para 'Roboto' caso n encontro 'Roboto' ele usara
+sans-serif e alinhando os items no centro */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+}
+
+/* alterando os links que estao dentro de cabecalho e colocando um hover
+quando o mause passa por cima */
+.cabecalho a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cabecalho a:hover {
+    filter: drop-shadow(0 0 6px #fff);
+}
+
+/* alinhando todos com flexbox e alinhando todos no centro */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+/* alinhando os componentes e direcionando uma coluna reversa 
+para inverter os elementos h1 e p */
+.logo {
+    display: flex;
+    flex-direction: column-reverse;
+    color: #fff;
+    filter: drop-shadow(0 0 5px #fff);
+}
+
+/* alterando o tamnho da fonte e deixando todas as letrar em maiusculo */
+.logo h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+.logo h1 span{
+    font-weight: 900;
+}
+
+.logo p {
+    font-size: small;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* alinnhando a lista do menu */
+.menu-navegacao ul {
+    display: flex;
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+.menu-navegacao ul li {
+    margin-left: 20px;
+}
+
+/* alinhando a lista de registro */
+
+.cadastro ul {
+    display: flex;
+}
+
+.cadastro ul li {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.cadastro .cadastrar {
+    color: #009749;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.950);
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+
+/* um hover pra ter uma açaozinha quando o mouse passar ou ficar em cima */
+.cadastro .cadastrar:hover {
+    transition: 0.1s;
+    color: #00ce64;
+    background-color: #fff;
+}
+
+.wrap-menu {
+    display: none;
+}
+
+/* conteudo da pagina */
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+
+    color: rgb(223, 223, 223);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    margin: auto;
+
+    padding: 100px 0;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 50px;
+}
+
+.conteudo .container h3 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+}
+
+.conteudo .container p {
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.conteudo .img-edu {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.conteudo p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.caixa-trilha {
+    display: flex;
+    text-align: center;
+    background-color: rgb(0, 9, 46);
+    padding: 100px 0;
+}
+
+.caixa-trilha .titulo-trilha {
+    font-size: 2em;   
+    filter: drop-shadow(0 0 5px #fff);
+    margin: 0 50px;
+}
+
+.caixa-trilha .conhecer {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgb(46, 46, 46);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 50px 40px;
+    margin: 0 50px;
+}
+
+.caixa-trilha .btn-conhecer {
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgb(0, 13, 89);
+}
+
+.caixa-trilha .btn-conhecer:hover {
+    cursor: pointer;
+    background-color: rgb(12, 0, 174);
+    transition: 500ms;
+}
+
+.caixa-trilha .btn-conhecer:active {
+     transition: 500ms;
+     transform: scale(0.9);
+}
+
+/* rodape */
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: 'robot', sans-serif;
+    padding-bottom: 50px;
+}
+
+/* flex-end pra deixar nop final do container */
+.caixa {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo-rodape {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 50px 50px 50px 25px;
+}
+
+/* adicionando um espaço entre as letras de 14px */
+.logo-rodape p {
+    letter-spacing: 14px;
+}
+
+.mapa-site ul li {
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 50px 10px 20px;
+}
+
+/* removendo o underline do link com text-decoration: none; e alterando
+a cor das letras */
+.mapa-site a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* adicionando o underline novamente quando o mouse passa por cima */
+.mapa-site a:hover {
+    text-decoration: underline;
+}
+
+.parana {
+    width: 200px;
+}
+.imgs {
+    display: flex;
+    margin-right: 20px;
+}
+
+.imgs img {
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.rodape .logo-face {
+    width: 55px;
+}
+
+.copy {
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 20px 20px;
+}
+

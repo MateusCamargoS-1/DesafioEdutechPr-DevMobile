@@ -1,0 +1,240 @@
+/* adcionando uma cor de fundo gradiente na pagina */
+.corpo {
+    background: linear-gradient(30deg, rgba(2, 0, 36, 1) 40%, rgba(9, 9, 121, 1) 80%, rgba(0, 212, 255, 1) 120%);
+}
+
+/* n tem muito oq falar kkkk*/
+
+.conteudo {
+    width: 900px;
+    height: 100vh;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 20px 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: center;
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.logo h1 {
+    filter: drop-shadow(0 0 5px #fff);
+    text-transform: uppercase;
+    font-size: 4em;
+}
+
+.logo span {
+    font-weight: bold;
+}
+
+.logo p {
+    filter: drop-shadow(0 0 5px #fff);
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d1d1d15b;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px #969696;
+}
+
+.cadastro form {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+}
+
+.cadastro form input {
+    width: 350px;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border: 1px solid #b5b5b5;
+    border-radius: 10px;
+}
+
+.cadastro form input:focus {
+    box-shadow: 0 0 10px #019eff;
+    outline: 0;
+}
+
+.cadastro .nome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro .nome>input {
+    width: 150px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 1.2em;
+    border: 0;
+    border-radius: 10px;
+}
+
+.btn-criarConta {
+    width: 80%;
+    margin-top: 20px;
+    color: #f4f8f6;
+    background-color: #007cc9;
+}
+
+.btn-criarConta:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #218aca;
+    background-color: #218aca;
+}
+
+.btn-entrar {
+    width: 50%;
+    margin-bottom: 20px;
+    color: #f4f8f6;
+    background-color: #00a651;
+}
+
+.btn-entrar:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #19a35c;
+    background-color: #19a35c;
+}
+
+.container hr {
+    width: 50%;
+    margin: 25px 0;
+    border: 1px solid #b3b3b3;
+}
+
+.copy {
+    color: #f4f8f6;
+    font-family: 'Robot', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* media query */
+
+@media screen and (max-width: 425px) {
+    .conteudo {
+        width: 100vw;
+    }
+
+    .conteudo .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 1em;
+    }
+
+    .cadastro {
+        margin-top: 30px;
+        background-color: initial;
+        border: 0;
+        box-shadow: 0 0 0 0;
+    }
+
+    .cadastro .nome > input {
+        font-size: 1em;
+        width: 82px;
+        padding: 10px 15px;
+    }
+
+    .cadastro form>input {
+        width: 200px;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .btn {
+        width: 220px;
+        text-decoration: none;
+        padding: 15px 0;
+        font-size: 1em;
+        border: 0;
+        border-radius: 10px;
+    }
+
+    .btn-criarConta {
+        margin-top: 0;
+    }
+
+    .btn-entrar {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo {
+        width: 100vw;
+    }
+
+    .conteudo .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 1em;
+    }
+
+    .cadastro {
+        margin-top: 30px;
+        background-color: initial;
+        border: 0;
+        box-shadow: 0 0 0 0;
+    }
+
+    .cadastro .nome > input {
+        font-size: 1em;
+        width: 82px;
+        padding: 10px 15px;
+    }
+
+    .cadastro form>input {
+        width: 200px;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .btn {
+        width: 220px;
+        text-decoration: none;
+        padding: 15px 0;
+        font-size: 1em;
+        border: 0;
+        border-radius: 10px;
+    }
+
+    .btn-criarConta {
+        margin-top: 0;
+    }
+
+    .btn-entrar {
+        width: 150px;
+    }
+}
